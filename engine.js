@@ -56,7 +56,7 @@ module.exports = function (options) {
       ]).then(function(answers) {
         var maxLineWidth = 200;
         // Hard limit this line
-        var head = (answers.type + scope + ': ' + answers.subject.trim()).slice(0, maxLineWidth);
+        var head = (answers.type + ': ' + answers.subject.trim()).slice(0, maxLineWidth);
         commit(head);
       });
     }
